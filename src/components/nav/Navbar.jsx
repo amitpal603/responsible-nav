@@ -103,7 +103,8 @@ function Navbar() {
               </NavLink>
             ))}
 
-            {authLinks.map((link, index) => (
+            <div className=' space-x-6'>
+              {authLinks.map((link, index) => (
               <NavLink
                 key={index}
                 to={link.to}
@@ -117,6 +118,7 @@ function Navbar() {
                 {link.label}
               </NavLink>
             ))}
+            </div>
           </div>
         </div>
       </div>
